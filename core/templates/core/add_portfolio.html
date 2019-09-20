@@ -1,0 +1,145 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %} {{ entrepreneur|title }}  | Add Portfolio {% endblock %}
+
+
+{% block content %}	
+		<!-- end:: Header Mobile -->
+		<div class="kt-grid kt-grid--hor kt-grid--root">
+			<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+
+				<!-- begin:: Aside Menu -->
+				{% include 'base/nav.aside.html' %}
+				<!-- end:: Aside -->
+
+				<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+
+					<!-- begin:: Header -->
+					<div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
+
+						<!-- begin:: Header Menu -->
+						<button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+						<div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
+							<div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile  kt-header-menu--layout-default ">
+								<ul class="kt-menu__nav ">
+									<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel kt-menu__item--active" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Portfolio</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- end:: Header Menu -->
+
+					<!-- Header Topbar -->
+					{% include 'base/nav.topheader.html' %}
+					<!-- End Header -->
+
+					<!-- end:: Header -->
+					<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor">
+
+						<!-- begin:: Content Head -->
+						<div class="kt-subheader   kt-grid__item" id="kt_subheader">
+							<div class="kt-subheader__main">
+								<h3 class="kt-subheader__title">
+									Add a portfolio item
+								</h3>
+								<span class="kt-subheader__separator kt-subheader__separator--v"></span>
+								<div class="kt-subheader__group" id="kt_subheader_search">
+									<span class="kt-subheader__desc" id="kt_subheader_total">
+										Sandra Stone </span>
+								</div>
+							</div>
+							<div class="kt-subheader__toolbar">
+								<a href="javascript:goBack();" class="btn btn-default btn-bold">
+									Back </a>
+							</div>
+						</div>
+
+						<!-- end:: Content Head -->
+
+						<!-- begin:: Content -->
+						<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
+							<div class="row">
+								<div class="col-xl-12">
+
+								<!--Begin:: Portlet-->
+								<div class="kt-portlet kt-portlet--tabs">
+									<div class="kt-portlet__head">
+										<div class="kt-portlet__head-toolbar">
+											<ul class="nav nav-tabs nav-tabs-space-lg nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-brand" role="tablist">
+												<li class="nav-item">
+													<a class="nav-link active" data-toggle="tab" href="#kt_apps_contacts_view_tab_1" role="tab">
+														<i class="flaticon2-note"></i> Description
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="kt-portlet__body">
+										<div class="tab-content kt-margin-t-20">
+
+											<!--Begin:: Tab Content-->
+											<div class="tab-pane active" id="kt_apps_contacts_view_tab_1" role="tabpanel">
+												<form>
+													<div class="form-group">
+														<input class="form-control" id="example-text-input" type="text" placeholder="Enter Title"></textarea>
+													</div>
+													<div class="form-group">
+														<textarea class="form-control" id="exampleTextarea" rows="6" placeholder="Enter Description"></textarea>
+													</div>
+													<div class="form-group">
+														<label for="exampleSelect1">Add image</label>
+														<div class="col-lg-4 col-md-9 col-sm-12">
+															<div class="kt-dropzone dropzone dz-clickable" action="inc/api/dropzone/upload.php" id="m-dropzone-one">
+																<div class="kt-dropzone__msg dz-message needsclick">
+																	<h3 class="kt-dropzone__msg-title">Drop files here or click to upload.</h3>
+																	<span class="kt-dropzone__msg-desc">This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col">
+															<a href="#" class="btn btn-label-brand btn-bold">Save Changes</a>
+															<!-- <a href="#" class="btn btn-clean btn-bold">Cancel</a> -->
+														</div>
+													</div>
+												</form>												
+											</div>
+										</div>
+									</div>
+
+									<!--End:: Portlet-->
+								</div>
+							</div>
+						</div>
+
+						<!-- end:: Content -->
+					</div>
+
+					<!-- begin:: Footer -->
+					{% include 'base/footer.html' %}
+					<!-- end:: Footer -->
+				</div>
+			</div>
+		</div>
+
+
+		<!-- QuickPanel -->
+		{% include 'base/quickpanel.html' %}
+
+		<!-- begin::Scrolltop -->
+		<div id="kt_scrolltop" class="kt-scrolltop">
+			<i class="fa fa-arrow-up"></i>
+		</div>
+
+		<!-- end::Scrolltop -->
+{% endblock %}
+
+{% block scripts %}
+	<script>
+		function goBack() {
+		window.history.back();
+		}
+	</script>
+{% endblock %}

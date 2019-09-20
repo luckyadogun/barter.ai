@@ -1,0 +1,233 @@
+
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %} {{ entrepreneur|title }}  | Create Pitch {% endblock %}
+
+
+{% block content %}	
+		<!-- end:: Header Mobile -->
+		<div class="kt-grid kt-grid--hor kt-grid--root">
+			<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+
+				<!-- begin:: Aside Menu -->
+				{% include 'base/nav.aside.html' %}
+				<!-- end:: Aside -->
+
+				<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+
+					<!-- begin:: Header -->
+					<div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
+
+						<!-- begin:: Header Menu -->
+						<button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+						<div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
+							<div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile  kt-header-menu--layout-default ">
+								<ul class="kt-menu__nav ">
+									<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel kt-menu__item--active" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Create Pitch</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- end:: Header Menu -->
+
+					<!-- Header Topbar -->
+					{% include 'base/nav.topheader.html' %}
+					<!-- end:: Header -->
+
+					<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor">
+
+						<!-- begin:: Content -->
+						<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
+							<div class="row">
+								<div class="col-lg-12">
+
+									<!--begin::Portlet-->
+									<div class="kt-portlet kt-portlet--last kt-portlet--head-lg kt-portlet--responsive-mobile" id="kt_page_portlet">
+										<div class="kt-portlet__head kt-portlet__head--lg">
+											<div class="kt-portlet__head-label">
+												<h3 class="kt-portlet__head-title">Pitch your ideas <small>create a convincing offer</small></h3>
+											</div>
+											<div class="kt-portlet__head-toolbar">
+												<a href="javascript:goBack();" class="btn btn-clean kt-margin-r-10">
+													<i class="la la-arrow-left"></i>
+													<span class="kt-hidden-mobile">Back</span>
+												</a>
+												<div class="btn-group">
+													<button type="submit" class="btn btn-brand" form="kt_form">											
+														<i class="la la-check"></i>
+														<span class="kt-hidden-mobile">save</span>
+													</button>												
+												</div>
+											</div>
+										</div>
+										<div class="kt-portlet__body">
+											<form class="kt-form" id="kt_form" method="POST" action="">
+												{% csrf_token %}
+												<div class="row">
+													<div class="col-xl-2"></div>
+														<div class="col-xl-8">
+
+															<div class="kt-section">
+																<div class="kt-section__body">
+																	<h3 class="kt-section__title kt-section__title-lg">How it works</h3>
+																	<button type="button" class="btn btn-danger" data-toggle="kt-popover" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Popover title">Title Hint</button>
+																	
+																	<div class="form-group row">
+																		<label class="col-3 col-form-label"><h4><strong>Title</strong></h4></label>
+																		<div class="col-9 kt-section__content kt-section__content--solid">
+																			<h5>
+																				I will build you an ecommerce website for a professional logo
+																			</h5>
+																		</div>
+																	</div>
+
+																	<button type="button" class="btn btn-danger" data-toggle="kt-popover" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Popover title">Body Hint</button>
+																	<div class="form-group row">
+																		<label class="col-3 col-form-label"><h4><strong>Body</strong></h4></label>
+																		<div class="col-9 kt-portlet">
+
+																			<div class="kt-portlet__body">
+																				<!--begin::Section-->
+																				<div class="kt-section">
+																					<div class="kt-section__title">
+																						What you'll get:
+																					</div>
+																					<div class="kt-section__desc">
+																						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																						<p></p>
+																						<ul>
+																							<li>some catchy bullet</li>
+																							<li>some catchy bullet</li>
+																							<li>some catchy bullet</li>
+																							<li>some catchy bullet</li>
+																							<li>some catchy bullet</li>
+																							<li>some catchy bullet</li>
+																						</ul>
+																						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.																					
+																					</div>
+
+																					<div class="kt-section__title">
+																						What I'll get:
+																					</div>
+																					<div class="kt-section__desc">
+																						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																						<p></p>
+																						<ul>
+																							<li>some catchy bullet</li>
+																							<li>some catchy bullet</li>
+																							<li>some catchy bullet</li>
+																							<li>some catchy bullet</li>
+																							<li>some catchy bullet</li>
+																							<li>some catchy bullet</li>
+																						</ul>
+																						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.																		
+																					</div>
+																				</div>
+																				<!--end::Section-->
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="kt-separator kt-separator--border-dashed kt-separator--space-lg"></div>			
+
+															{% if messages %}
+																<ul class="messages">
+																	{% for message in messages %}
+																	<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+																	{% endfor %}
+																</ul>
+															{% endif %}
+
+															<div class="kt-section kt-section--first">
+																<div class="kt-section__body">
+																	<h3 class="kt-section__title kt-section__title-lg">Your turn!</h3>
+																	
+																	<div class="form-group row">
+																		<label class="col-3 col-form-label"><h5><strong>Title</strong></h5></label>
+																		<div class="col-9">
+																			<input class="form-control form-control-md" type="text" name="title">
+																		</div>
+																	</div>
+
+																	<div class="form-group row">
+																		<label class="col-3 col-form-label"><h5><strong>Body</strong></h5></label>
+																		<div class="col-lg-9 col-md-9 col-sm-12">
+																			<div class="md-editor active" id="1560629169016">
+																				<textarea name="content" class="form-control md-input" data-provide="markdown" rows="10" style="resize: none;"></textarea>
+																				<div class="md-fullscreen-controls">
+																					<a href="#" class="exit-fullscreen" title="Exit fullscreen">
+																						<span class="fa fa-compress"></span>
+																					</a>
+																					</div>
+																				</div>
+																		</div>
+																	</div>
+
+																	<div class="form-group row">
+																		<label class="col-3 col-form-label"><h5><strong>Skills Needed</strong></h5></label>
+																		<div class="col-9" name="skills">
+																			<input class="form-control form-control-md" type="text" placeholder="marketing, logo design" name="skills">
+																		</div>
+																	</div>
+
+																	<div class="form-group row">
+																		<label class="col-3 col-form-label"><h5><strong>Offer Status</strong></h5></label>
+																		<div class="form-group">
+																			<label>Offer-terms</label>
+																			<div></div>
+																			<select class="custom-select form-control" name="offer_status">
+																				<option selected="negotiable">Negotiable</option>
+																				<option value="non-negotiable">Non-negotiable</option>
+																			</select>
+																		</div>
+																	</div>
+																	
+																</div>
+															</div>
+														</div>
+													<div class="col-xl-2"></div>
+												</div>
+											</form>
+										</div>
+									</div>
+
+									<!--end::Portlet-->
+								</div>
+							</div>
+						</div>
+
+						<!-- end:: Content -->
+					</div>
+
+					<!-- begin:: Footer -->
+					{% include 'base/footer.html' %}
+					<!-- end:: Footer -->
+				</div>
+			</div>
+		</div>
+
+		<!-- end:: Page -->
+
+		<!-- QuickPanel -->
+		{% include 'base/quickpanel.html' %}
+		<!-- end::Quick Panel -->
+
+		<!-- begin::Scrolltop -->
+		<div id="kt_scrolltop" class="kt-scrolltop">
+			<i class="fa fa-arrow-up"></i>
+		</div>
+
+		<!-- end::Scrolltop -->
+
+{% endblock %}
+
+{% block scripts %}
+	<script>
+		function goBack() {
+		window.history.back();
+		}
+	</script>
+{% endblock %}

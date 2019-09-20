@@ -1,0 +1,424 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Barter.ai - Share. Swap. Build</title>
+  
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/landing/img/favicon-16x16.png'  %}">
+
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="{% static 'assets/landing/css/style.css' %}">
+
+    <!--[if lt IE 9]>
+      <script src="{% static 'assets/landing/js/html5shiv.js' %}"></script>
+      <script src="{% static 'assets/landing/js/respond.min.js' %}"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+  <!-- PRELOADER -->
+  <div class="ds-preloader"></div>
+  <!-- /PRELOADER -->
+
+  <!-- HEADER -->
+  <header>
+
+    <!-- HEADER OVERLAY --> 
+    <div class="ds-overlay ds-overlay-color"></div>
+    <!-- /HEADER OVERLAY -->
+    
+    <div class="container">
+
+        <!-- LOGO & SOCIALS -->
+          <div class="row">
+            <!-- LOGO -->
+            <div class="col-sm-4 ds-logo">
+              <a href="/" title="">
+                <img src="{% static 'assets/landing/img/logo-1x.png' %}" class="ds-logo-1x" alt="">
+                <img src="{% static 'assets/landing/img/logo-2x.png' %}" class="ds-logo-2x" alt="">
+              </a>
+            </div>
+            <!-- /LOGO -->
+            <!-- TEXT + BUTTON -->
+            <div class="col-sm-8 ds-text-button">
+              <a href="{% url 'users:login' %}">Sign In</a>
+            </div>
+            <!-- /TEXT + BUTTON --> 
+          </div>
+        <!-- /LOGO & SOCIALS -->
+        
+        <!-- TITLE -->
+          <div class="row">
+            <div class="col-xs-12 col-md-7 ds-title">
+              <h1>Share. Swap. Build</h1>
+            </div>
+          </div>
+        <!-- /TITLE -->
+
+        <!-- TITLE PARAGRAPH -->
+          <div class="row">
+            <div class="col-sm-12 col-md-5 ds-title-paragraph">
+              <p>Get your project on the go <strong>without sharing equity or hiring freelancers... and build a solid network </strong>with others at the same time! </p>
+            </div>
+          </div>
+        <!-- /TITLE PARAGRAPH -->
+
+        <!-- BUTTONS -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-8 ds-buttons">
+              <a href="{% url 'users:signup' %}" class="ds-button-left">GET STARTED FREE <i class="fa fa-long-arrow-right"></i></a><a href="#learnmore" class="ds-button-right">How it works</a>
+            </div>
+          </div>
+        <!-- /BUTTONS -->
+
+        <!-- SCROLL DOWN -->
+          <div class="row">
+            <div class="col-sm-12 ds-scroll-down">
+              <a href="#" title=""><i class="fa fa-chevron-down"></i></a>
+            </div>
+          </div>
+        <!-- /SCROLL DOWN -->
+    </div>
+    <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; z-index: -999998; position: absolute; width: 1680px; height: 843px;"><img src="{% static 'assets/landing/img/bgx.jpg' %}" style="position: absolute; margin: 0px; padding: 0px; border: none; max-height: none; max-width: none; z-index: -999999; width: 1798.4px; height: 843px; left: -59.2px; top: 0px;"></div>
+   
+  </header>
+  <!-- /HEADER -->
+
+<!-- CLIENTS -->
+  <div class="clients module">
+    <div class="container">
+      <!-- TITLE -->
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 ds-clients-title">
+          <h2>– AS FEATURED IN –</h2>
+        </div>
+      </div>
+      <!-- /TITLE -->
+      <!-- COLUMNS -->
+      <div class="row">
+        <div class="col-sm-12 ds-clients">
+          <div class="ds-clients-carousel">
+            <!-- FIRST ROW -->
+            <div class="row">
+              <div class="col-xs-6 col-sm-2 ds-clients-item">
+                <img src="{% static 'assets/landing/img/client1.png' %}" alt="">
+              </div>
+              <div class="col-xs-6 col-sm-2 ds-clients-item">
+                <img src="{% static 'assets/landing/img/client2.png' %}" alt="">
+              </div>
+              <div class="col-xs-6 col-sm-2 ds-clients-item">
+                <img src="{% static 'assets/landing/img/client3.png' %}" alt="">
+              </div>
+              <div class="col-xs-6 col-sm-2 ds-clients-item"> 
+                <img src="{% static 'assets/landing/img/client4.png' %}" alt="">
+              </div>
+			   <div class="col-xs-6 col-sm-2 ds-clients-item">
+                <img src="{% static 'assets/landing/img/client5.png' %}" alt="">
+              </div>
+              <div class="col-xs-6 col-sm-2 ds-clients-item">
+                <img src="{% static 'assets/landing/img/client6.png' %}" alt="">
+              </div>
+            </div>
+            
+            </div>
+            <!-- /SECOND ROW -->
+          </div>
+        </div>
+      </div>
+      <!-- /COLUMNS -->
+    </div>
+  <!-- /CLIENTS -->
+  
+  
+  <!-- ICONS -->
+  <div class="icons module">
+    <div class="container">
+      <!-- TITLE -->
+      <div class="row">
+        <div class="col-sm-12 ds-icons-title">
+              <h2>Why use Barter.ai?</h2>
+		        <p>Here are some of the reasons we think you'd love Barter.ai
+		        </p>
+        </div>
+      </div>
+      <!-- /TITLE -->
+      <!-- COLUMNS -->
+      <div class="row">
+        <div class="col-sm-6 col-md-4 ds-icon-box ds-icon-box-one">
+          <div>
+            <span><i class="fa fa-dollar" style="font-size:48px;color:#33c"></i></span>
+            <h3>No Hiring Fee</h3>
+			<p>Get super-talented people to work with you without any upfront cost. All you need is the necessary skill to perform their gigs!</p>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 ds-icon-box ds-icon-box-two">
+          <div>
+            <span><i class="fa fa-thumbs-up" style="font-size:48px;color:#33c"></i></span>
+            <h3> No Freelancer Hassles</h3>
+            <p>Avoid the headache that comes with trying to manage freelancers like payment issues, missed deadlines and communication problems. Zero stress</p>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 ds-icon-box ds-icon-box-three">
+          <div>
+            <span><i class="fa fa-pencil-square-o" style="font-size:48px;color:#33c"></i></span>
+            <h3>Create Unlimited Gigs</h3>
+            <p>Barter.ai is FREE. Yes! Free without limits. You can post an unlimited amount of gigs needed to get your project done. Go above the payment plan!</p>
+          </div>
+        </div>
+
+		<div class="col-sm-6 col-md-4 ds-icon-box ds-icon-box-two">
+       <div>
+            <span><i class="fa fa-users" style="font-size:48px;color:#33c"></i></span>
+            <h3>Build a solid network</h3>
+            <p>Get the opportunity to meet and make new friends. What's more? You can scale your relationship outside of Barter.ai and embrace your potentials.</p>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 ds-icon-box ds-icon-box-two">
+          <div>
+            <span><i class="fa fa-heart-o" style="font-size:48px;color:#33c"></i></span>
+            <h3>Do the work you love</h3>
+            <p>Love to code but hate to market? Sure! Find someone who loves to market but can code and create magic instantly! Everyone gets to the work they love!</p>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 ds-icon-box ds-icon-box-three">
+          <div>
+            <span><i class="fa fa-money" style="font-size:48px;color:#33c"></i></span>
+            <h3>Bootstrap-friendly</h3>
+            <p>Are your bootstrapping with a shoestring budget? Pay with your skills and keep your cash for other useful purpose while leveraging your skills.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- /COLUMNS -->
+    </div>
+  <!-- /ICONS -->
+  
+   <!-- PRODUCT BOX -->
+  <div class="product module" id="learnmore">
+    <div class="container">
+      <!-- COLUMNS -->
+      <div class="row">
+        <div class="col-md-5 ds-product-image">
+          <img src="{% static 'assets/landing/img/phone-1.png' %}" alt="">
+        </div>        
+        <div class="col-md-7 ds-product">
+          <h3>Create Gig</h3>
+          <p>It's easy to get started. It's simple as creating a gig with a catchy title, clear and consise explanation and set the negotiation terms.
+          </p>         
+          <a href="{% url 'users:login' %}" class="ds-product-button-left">Get Started <i class="fa fa-long-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- /COLUMNS -->
+    </div>
+  </div>
+  <!-- /PRODUCT BOX -->
+
+  <!-- PRODUCT BOX #2 -->
+  <div class="product product-right module">
+    <div class="container">
+      <!-- COLUMNS -->
+      <div class="row">
+        <div class="col-md-7 ds-product">
+          <h3>Find gigs with skills you have</h3>
+          <p>Now that you have created your gig. Time to find others with skills you have.
+            Use the simple and fast search functionality to find gigs that needs your skills
+            with posters that have skills you need. Contact the poster to make an agreement.
+          </p>
+           <a href="{% url 'users:login' %}" class="ds-product-button-left">Get Started <i class="fa fa-long-arrow-right"></i></a>
+         
+        </div>
+        <div class="col-md-5 ds-product-image">
+          <img src="{% static 'assets/landing/img/phone-2.png' %}" alt="">
+        </div>
+      <!-- /COLUMNS -->
+      </div>
+    </div>
+  </div>
+  <!-- /PRODUCT BOX #2 -->
+  
+    <!-- PRODUCT BOX -->
+  <div class="product module">
+    <div class="container">
+      <!-- COLUMNS -->
+      <div class="row">
+        <div class="col-md-5 ds-product-image">
+          <img src="{% static 'assets/landing/img/phone-3.png' %}" alt="">
+        </div>        
+        <div class="col-md-7 ds-product">
+          <h3>Swap and get things done!</h3>
+          <p>Once you've matched with someone, time to get their task done with fast, visible iterations. Make sure to monitor their actions too.</p>
+          <a href="{% url 'users:login' %}" class="ds-product-button-left">Get started <i class="fa fa-long-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- /COLUMNS -->
+    </div>
+  </div>
+  <!-- /PRODUCT BOX -->
+  
+   <!-- TESTIMONIALS -->
+  <div class="testimonials module">
+    <div class="container">
+      <!-- ICON -->
+      <div class="row">
+        <div class="col-sm-12 ds-testimonials-icon">
+        </div>
+      </div>
+      <!-- /ICON -->
+      <div class="row">
+        <div class="col-sm-12 ds-testimonials">
+          <div class="ds-carousel">
+              <div class="row">
+			   <div class="row">
+        <div class="col-sm-12 ds-testimonials">
+		<h3>Here's a review from the community</h3>
+		<h4>We have collated more than 1000 reviews. Here are some from the community 
+		  </h4>
+        </div>
+      </div>
+                <div class="col-sm-4">
+                  <blockquote>I kickstarted my project and it got done within 1 week by highly motivated entrepreneurs with skills I need and tasks I can perform. Wow!</blockquote>
+                  <img src="{% static 'assets/landing/img/face-1.jpg' %}" alt="">
+                  <p><strong>LEVI J.</strong>CEO, SmartPants Marketing</p>
+                </div>
+                <div class="col-sm-4">
+                  <blockquote>After coming from a bad experience working with freelancers. I had to give Barter a try and I get swept off my feet. The community is great.</blockquote>
+                  <img src="{% static 'assets/landing/img/face-2.jpg' %}" alt="">
+                  <p><strong>ROSSY ANDERSON</strong>CO-FOUNDER, ZIGZAG Inc</p>
+                </div>
+				  <div class="col-sm-4">
+                  <blockquote>I got to meet other designers here that I can partner with on some other project. The best part was that it is totally free.</blockquote>
+                  <img src="{% static 'assets/landing/img/face-3.jpg' %}" alt="">
+                  <p><strong>JEFF NEWMAN</strong>CEO, AmazingWorks Design</p>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  <!-- /TESTIMONIALS -->
+
+    <!-- PROMO -->
+  <div class="promo module">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 ds-promo">
+          <h2><span id="words"></span></h2>
+          <a href="{% url 'users:login' %}">Get Started for free!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /PROMO -->
+  
+  <!-- PRICING TABLE -->
+  <!-- <div class="pricing-table module" id="pricing">
+    <div class="container"> -->
+      <!-- TITLE -->
+      <!-- <div class="row">
+        <div class="col-sm-12  ds-pricing-table-title">
+          <h2>Select the plan that suits you. Upgrade,<br>downgrade, or cancel anytime.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a<br> odio finibus bibendum in sit amet leo.</p>
+        </div>
+      </div> -->
+      <!-- /TITLE -->
+      <!-- COLUMNS -->
+      <!-- <div class="row">
+        <div class="col-md-4 ds-pricing-table-normal">
+          <div>
+            <h4>Personal Plan</h4>
+            <p>Simpliest plan available</p>
+            <span>$9<span>/ YEARLY</span></span>
+            <ul>
+              <li>3 Projects</li>
+              <li>Team Collaboration</li>
+              <li>Analytics & Reports</li>
+			  <li>One user</li>
+            </ul>
+            <a href="#">choose This plan</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 ds-pricing-table-normal ds-pricing-table-featured">
+          <span>BEST VALUE</span>
+          <div>
+            <h4>Startup Plan</h4>
+            <p>Simpliest plan available</p>
+            <span>$29<span>/ YEARLY</span></span>
+            <ul>
+              <li>3 Projects<li>
+              <li>Team Collaboration<li>
+              <li>Analytics & Reports<li>
+              <li>10 Active users<li>                 
+            </ul>
+            <a href="#">choose This plan</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 ds-pricing-table-normal">
+          <div>
+            <h4>Enterprise Plan</h4>
+            <p>Everything you need</p>
+            <span>$149<span>/YEARLY</span></span>
+            <ul>
+              <li>Unlimited Projects</li>
+              <li>Team Collaboration</li>
+              <li>Analytics & Reports</li>
+              <li>Priority Support</li>
+            </ul>
+            <a href="#">choose This plan</a>
+          </div>
+        </div>
+      </div> -->
+      <!-- /COLUMNS -->
+    <!-- </div>
+  </div> -->
+  <!-- /PRICING TABLE -->
+
+  
+  
+
+  <!-- FOOTER -->
+  <div class="footer module">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 ds-footer-copyrights">
+          <p>©Barter.ai - <small>An ALPHALABS Company</small></p>
+        </div>      
+      </div>
+    </div>
+  </div>
+  <!-- /FOOTER -->
+
+  <!-- jQuery -->
+  <script src="{% static 'assets/landing/js/jquery-1.11.0.min.js' %}"></script>
+  <!-- Backstretch -->
+  <script src="{% static 'assets/landing/js/jquery.backstretch.min.js' %}"></script>
+  <!-- slick -->
+  <script src="{% static 'assets/landing/js/slick.min.js' %}"></script>
+  <!-- Featherlight -->
+  <script src="{% static 'assets/landing/js/featherlight.min.js' %}"></script>
+  <!-- WordsRotator -->
+  <script src="{% static 'assets/landing/js/jquery.wordrotator.min.js' %}"></script>
+  <!-- Countdown -->
+  <script src="{% static 'assets/landing/js/jquery.countdown.js' %}"></script>
+   <!-- Smooth Scroll -->
+  <script src="{% static 'assets/landing/js/smoothscroll.js' %}"></script>
+  <!-- Ajax mailchimp -->
+  <script src="{% static 'assets/landing/js/jquery.ajaxchimp.js' %}"></script>
+  <!-- WOW.js' %} -->
+  <script src="{% static 'assets/landing/js/wow.min.js' %}"></script>
+  <!-- Masnoo js scripts -->
+  <script src="{% static 'assets/landing/js/ds-masnoo.js' %}"></script>
+  
+  </body>
+</html>

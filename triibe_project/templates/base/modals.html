@@ -1,0 +1,55 @@
+{% load static %}
+
+<!-- Invite Friend Modal --- check if email is valid. If TRUE, add 2 extra connects to theirs. If message is empty, generate message -->
+<div class="modal fade" id="kt_modal_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Invite your friend <strong><small class="text-muted">and gain 2 extra connects</small></strong></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="form-control-label">Recipient Email:</label>
+                            <input type="email" class="form-control" id="recipient-email" placeholder="johnwick@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="form-control-label">Message:</label>
+                            <textarea class="form-control" rows="6" id="message-text" placeholder="Hey, I think you should be a part of this"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Invite</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- End Invite friend modal -->
+
+<!-- No connects Modal -->
+<div class="modal fade" id="kt_modal_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ooops!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5>You've run out of connects!</h5>
+                <p>There's hope tho! You can invite a friend to gain 2 connects or get more connects by upgrading your plan</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-bold btn-label-brand btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#kt_modal_4">Invite</button>
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                <a href="#" class="btn btn-primary">Upgrade Plan</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End No connects Modal -->
