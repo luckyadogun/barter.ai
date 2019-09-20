@@ -1,1 +1,1 @@
-web: gunicorn triibe.wsgi --log-file -
+web: gunicorn triibe_project.wsgi --log-file -
